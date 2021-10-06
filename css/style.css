@@ -1,0 +1,51 @@
+/*
+Esto es un comentario
+SELECTOR {
+    propiedad: valor;
+}
+*/
+
+
+*{
+    background-color: #2f2a29;
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+body > ul > li:nth-child(1) > a {
+    display: inline;
+    float: left;
+    text-align: center;
+}
+body > ul > li:nth-child(2) > a {
+    display: inline;
+    float: right;
+    text-align: center;
+}
+body > ul > li:nth-child(3) > a {
+    display: inline;
+    float: right;
+    text-align: center;
+}
+body > ul > li:nth-child(4) > a {
+    display: inline;
+    float: right;
+    text-align: center;
+}
+li a {
+    display: block;
+    padding: 8px;
+    background-color: red;
+} 
+li a:hover:not(.active) {
+    background-color: #111;
+} 
