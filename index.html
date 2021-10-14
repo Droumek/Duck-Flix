@@ -9,31 +9,35 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link
             href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
             rel="stylesheet">
-        <title>Document</title>
+            <script src="https://kit.fontawesome.com/efff0a816e.js" crossorigin="anonymous"></script>
+        <title>Duckflix</title>
+        
     </head>
     <body>
         <header class="header">
             <div class="contenedor">
-                <div class="header_contenido">
-                    <p class="logo">Duckflix</p>
-                </div>
+                <h2 class="logotipo">Duckflix</h1>
+                <nav>
+                    <a href="index.html" class="activo">Inicio</a>
+                    <a href="pages/movies.html">Peliculas</a>
+                    <a href="pages/login.html">Login</a>
+                    <a href="pages/signup.html">Registrarse</a>
+                    <a href="pages/contact.html">Contactanos</a>
+                </nav>
             </div>
         </header>
-        <section class="banner">
+        <main>
             <div class="contenedor">
-                <br>
-                <div class="dropdown">
-                    <button class="mainmenubtn">Menu</button>
-                    <div class="dropdown-child">
-                        <a href="pages/movies.html">Peliculas</a>
-                        <a href="pages/login.html">Login</a>
-                        <a href="pages/signup.html">Registrarse</a>
-                        <a href="pages/contact.html">Contactanos</a>
-                    </div>
-                </div>
-
+                <h3 class="titulo">The Mandalorian</h3>
+                <p class="description">
+                    Contenido Sugerido
+                </p>
+                <!-- El role boton es importante para accesibilidad-->
+                <button role="button" class="boton"><i class="fa-solid fa-circle-play"></i>Reproducir</button>
+                <button role="button" class="boton"><i class="fa-solid fa-circle-play"></i>Mas Peliculas/Series</button>
             </div>
-        </section>
+        </main>
     </body>
 </html>
