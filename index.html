@@ -11,33 +11,52 @@
             href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
             href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
             rel="stylesheet">
-            <script src="https://kit.fontawesome.com/efff0a816e.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/efff0a816e.js"
+            crossorigin="anonymous"></script>
         <title>Duckflix</title>
-        
+
     </head>
     <body>
-        <header class="header">
+        <header>
             <div class="contenedor">
                 <h2 class="logotipo">Duckflix</h1>
-                <nav>
-                    <a href="index.html" class="activo">Inicio</a>
-                    <a href="pages/movies.html">Peliculas</a>
-                    <a href="pages/login.html">Login</a>
-                    <a href="pages/signup.html">Registrarse</a>
-                    <a href="pages/contact.html">Contactanos</a>
+                <span class="menu-icon" id="menu-icon">Ver menú</span>
+                <nav class="navigation">
+                    <ul id="navigation ul">
+                        <li><a href="index.html" class="activo"><i class="fas
+                                    fa-home"></i>Inicio</a></li>
+                        <li><a href="pages/movies.html"><i class="fas fa-film"></i>Peliculas</a></li>
+                        <li><a href="pages/login.html"><i class="fas
+                                    fa-sign-in-alt"></i>Login</a></li>
+                        <li><a href="pages/signup.html"><i class="fas
+                                    fa-user-tag"></i>Registrarse</a></li>
+                        <li><a href="pages/contact.html"><i class="fas
+                                    fa-id-card"></i>Contactanos</a></li>
+                    </ul>
                 </nav>
             </div>
         </header>
         <main>
-            <div class="contenedor">
-                <h3 class="titulo">The Mandalorian</h3>
-                <p class="description">
-                    Contenido Sugerido
-                </p>
-                <!-- El role boton es importante para accesibilidad-->
-                <button role="button" class="boton"><i class="fa-solid fa-circle-play"></i>Reproducir</button>
-                <button role="button" class="boton"><i class="fa-solid fa-circle-play"></i>Mas Peliculas/Series</button>
+            <div class="pelicula-principal">
+                <div class="contenedor">
+                    <h3 class="titulo">The Mandalorian</h3>
+                    <p class="description">
+                        Contenido Sugerido
+                    </p>
+                    <!-- El role boton es importante para accesibilidad-->
+                    <button role="button" class="boton"><i class="far
+                            fa-play-circle"></i>Reproducir</button>
+                    <button role="button" class="boton"><i class="far
+                            fa-play-circle"></i>Mas Peliculas/Series</button>
+                </div>
             </div>
         </main>
+        <footer class="footer">
+            <div class="contenedor">
+                <p>Página disenaña por Facundo</p>
+            </div>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="js/menu.js"></script>
     </body>
 </html>
