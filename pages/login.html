@@ -1,29 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title></title>
+        <title>Login</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="../css/style.css" rel="stylesheet">
-        <title>Login</title>
+        <link rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+            crossorigin="anonymous">
+        <style>
+            body{
+                background: #ffe259;
+                background: linear-gradient(to right, #ffa751, #ffe259);
+            }
+            .bg{
+                background-image: url(../assets/images/venom.png);
+                background-position: center center;
+                background-size: cover;
+            }
+        </style>
     </head>
     <body>
-        <a href="../index.html">Volver al Menu principal</a>
-        <br>
-        Ingreso al Sistema
-        <br>
-        <br>
-        <form action="https://www.w3schools.com/action_page.php" method="POST" target="__blank" >
-    
-            <label for="fname">Ingrese nombre de usuario:</label>
-            <input type="text" id="fnameID" name="fname" placeholder="Nombre de usuario" required maxlength="8">
-            <br>
-            <br>
-            <label for="password">Ingrese Contraseña:</label>
-            <input type="password" id="passwordID" name="password" placeholder="Contraseña" required>
-            <br>
-            <br>
-            <input type="submit" value="Enviar">
-        </form>
+        <div class="container w-75 bg-primary mt-5 rounded shadow">
+            <div class="row align-items-stretch">
+                <div class="col bg d-none d-lg-block col-md-5 col-lg-5 col-xl-6">
+
+                </div>
+                <div class="col bg-white p-5 rounded-right">
+                    <div class="text-end">
+
+                    </div>
+                    <h2 class="fw-bold text-center py-5">Bienvenido</h2>
+
+                    <!--     Login      -->
+                    <form action="#">
+                        <div class="mb-4">
+                            <label for="email" class="form-label">Mail</label>
+                            <input type="email" class="form-control"
+                                name="email">
+                        </div>
+                        <div class="mb-4">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" class="form-control"
+                                name="password">
+                        </div>
+                        <div class="mb-4 form-check">
+                            <input type="checkbox" name="connected"
+                                class="form-check-input" id="">
+                            <label for="connected" class="form-check-label">Mantenerme
+                                Conectado</label>
+                        </div>
+
+                        <div class="d-grid text-center">
+                            <button type="submit" class="btn btn-primary">Iniciar
+                                Seción</button>
+                        </div>
+                        <div class="my-3">
+                            <span>¿No Tienes Cuenta?<a href="#">Regístrate!</a></span>
+                            <br>
+                            <span><a href="#">Recuperar Password</a></span>
+                        </div>
+                    </form>
+
+                    <!--    Login Con Redes Sociales    -->
+                    <div class="cont-log w-100 my-5">
+                        <div class="row text center">
+                            <div class="col-12">Iniciar Sesión</div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <button class="btn btn-outline-primary w-100
+                                    my-1">
+                                    <div class="row align-items-center">
+                                        <div class="col-2 d-none d-md-block">
+                                            <img src="../assets/images/fb.png"
+                                                width="32" alt="">
+                                        </div>
+                                        <div class="col-12 col-md-10 text-center">
+                                            Facebook
+                                        </div>
+                                    </div>
+                                </button>
+                            </div>
+                            <div class="col">
+                                <button class="btn btn-outline-danger w-100
+                                    my-1">
+                                    <div class="row align-items-center">
+                                        <div class="col-2 d-none d-md-block">
+                                            <img
+                                                src="../assets/images/Google.png"
+                                                width="32" alt="">
+                                        </div>
+                                        <div class="col-12 col-md-10 text-center">
+                                            Google
+                                        </div>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="bootstrap.bundle.min.js"></script>
     </body>
 </html>
