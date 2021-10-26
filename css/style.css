@@ -126,6 +126,10 @@ img{
     margin-right: 1em;
 }
 
+.navigation ul i{
+    padding: 5px;
+}
+
 /* ----------- Media Queries ----------*/
 
 @media screen and (max-width: 768px){
