@@ -9,22 +9,29 @@
             href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
             integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
             crossorigin="anonymous">
-        <style>
-            body{
-                background: #ffe259;
-                background: linear-gradient(to right, #ffa751, #ffe259);
-            }
-            .bg{
-                background-image: url(../assets/images/venom.png);
-                background-position: center center;
-                background-size: cover;
-            }
-        </style>
+        <link href="../css/login.css" rel="stylesheet">
     </head>
     <body>
+        <header>
+            <div class="contenedor">
+                <h2 class="logotipo">Duckflix</h1>
+                <span class="menu-icon" id="menu-icon">Ver menú</span>
+                <nav class="navigation">
+                    <ul id="navigation ul">
+                        <li><a href="index.html" class="activo"><i class="fas
+                                    fa-home"></i>Inicio</a></li>
+                        <li><a href="pages/login.html"><i class="fas
+                                    fa-sign-in-alt"></i>Login</a></li>
+                        <li><a href="pages/signup.html"><i class="fas
+                                    fa-user-tag"></i>Registrarse</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
         <div class="container w-75 bg-primary mt-5 rounded shadow">
             <div class="row align-items-stretch">
-                <div class="col bg d-none d-lg-block col-md-5 col-lg-5 col-xl-6">
+                <div class="col bg d-none d-lg-block col-md-5 col-lg-5
+                    col-xl-6">
 
                 </div>
                 <div class="col bg-white p-5 rounded-right">
@@ -77,7 +84,8 @@
                                             <img src="../assets/images/fb.png"
                                                 width="32" alt="">
                                         </div>
-                                        <div class="col-12 col-md-10 text-center">
+                                        <div class="col-12 col-md-10
+                                            text-center">
                                             Facebook
                                         </div>
                                     </div>
@@ -92,7 +100,8 @@
                                                 src="../assets/images/Google.png"
                                                 width="32" alt="">
                                         </div>
-                                        <div class="col-12 col-md-10 text-center">
+                                        <div class="col-12 col-md-10
+                                            text-center">
                                             Google
                                         </div>
                                     </div>
@@ -104,5 +113,7 @@
             </div>
         </div>
         <script src="bootstrap.bundle.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="../js/menu.js"></script>
     </body>
 </html>

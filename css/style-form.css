@@ -137,6 +137,71 @@ main{
 .formulario__grupo-incorrecto .formulario__input{
     border: 3px solid #bb2929;
 }
+
+/* ----------- Menu ------------- */
+.menu-icon{
+    display: none;
+    color: white;
+}
+.navigation ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.navigation ul li{
+    display: inline-block;
+}
+.navigation ul li a:hover{
+    background: #4a4a4a;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+}   
+
+.contenedor{
+    width: 90%;
+    margin: auto;
+}
+
+header{
+    background: #141414;
+    padding: 30px 0;
+}
+
+header .contenedor{
+    display: flex;
+    justify-content: space-between; /* logo a la izquierda menu a la derecha*/
+    align-items: center;
+}
+
+header .logotipo{
+    font-family: 'Bebas Neue', cursive;
+    font-weight: bold;
+    color: #E50914;
+    font-size: 40px;
+}
+
+header nav a{
+    color: #aaa;
+    text-decoration: none;
+    margin-right: 20px;
+    transition: all 0.4s linear;
+}
+
+header nav a:hover,
+header nav a.activo{
+    color: #fff;
+}
+
+img{
+    width: 100%;
+}
+
+.navigation ul i{
+    padding: 5px;
+}
 /* ----------- Mediqueries -------------------------- */
 @media screen and (max-width: 778px){
     .formulario{
@@ -151,5 +216,32 @@ main{
     
     .formulario__btn{
         width: 100%;
+    }
+    header .logotipo{
+        margin-bottom: 10px;
+        font-size: 30px;
+    }
+    
+    header .contenedor{
+        flex-direction: column;
+        text-align: center;
+    }
+    
+}
+
+@media screen and (max-width: 480px){
+    header .logotipo{
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+    }
+    .navigation ul{
+        display: none;
+    }
+    .navigation ul.show{
+        display: block;
     }
 }
